@@ -54,7 +54,7 @@ function firstTo40() {
 }
 
 function lastTo50() {
-  grades[7] = 50;
+  grades[grades.length - 1] = 50;
   // Set the grade of the last student to 50.
 
   outputEl.innerHTML = "Last grade to 50";
@@ -74,7 +74,7 @@ function addRandomGrade() {
 }
 
 function removeLastGrade() {
-  grades = [60, 70, 80, 65, 90, 83, 30];
+  grades.pop();
   // Remove the last grade.
   outputEl.innerHTML = "Remove the last grade";
 }
